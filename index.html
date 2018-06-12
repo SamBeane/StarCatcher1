@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Shut the Box</title>
+    <link rel="stylesheet" type="text/css" href="stbStyles.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="stbScripts.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <h1> Shut The Box</h1>
+        </header>
+        <div id="debug">...</div>
+        <div id="tiles">
+            <h3>  Roll the dice and select a combination of values that match the total on the dice.</h3>
+            <img src="images/1.png" class="numbers" id="1" onclick="select(1)">
+            <img src="images/2.png" class="numbers" id="2" onclick="select(2)">
+            <img src="images/3.png" class="numbers" id="3" onclick="select(3)">
+            <img src="images/4.png" class="numbers" id="4" onclick="select(4)">
+            <img src="images/5.png" class="numbers" id="5" onclick="select(5)">
+            <img src="images/6.png" class="numbers" id="6" onclick="select(6)">
+            <img src="images/7.png" class="numbers" id="7" onclick="select(7)">
+            <img src="images/8.png" class="numbers" id="8" onclick="select(8)">
+            <img src="images/9.png" class="numbers" id="9" onclick="select(9)">
+        </div>
+        <div id="leftside">
+            <button onclick="roll()">Roll</button>
+        </div>
+        <div id="endBtn">
+            <button class="center bigText" onclick="endGame()">End Game</button>
+        </div>
+        <div id="reset">
+            <button class="center bigText" onclick="reset()">Reset</button>
+        </div>
+        <div id="dice">
+            <img src="images/Dice1.png" id="die1" class="numbers">
+            <img src="images/Dice2.png" id="die2" class="numbers">
+        </div>
+        <!-- player's scores will be in this div -->
+        <div id="scoreboard" class="testing">
+            <p>Score: <span id="score">45</span></p>
+            <p class="littleScore" id="p2t"> Player 1: <span id="p1Games"><span></p>
+            <p class="littleScore" id="p1t"> Player 2: <span id="p2Games"><span></p>
+              <p><u>Player 1 Total</u><br><span id="p1">0</span>
+                <span class="floatR"><u>Player 2 Total</u><br><span id="p2">0</span>
+                </span>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+
